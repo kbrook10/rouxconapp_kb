@@ -22,6 +22,11 @@ app.set('views', 'app/views');
 app.use(express.static('app/public'));
 app.use(require('./routes/index'));
 app.use(require('./routes/about'));
+app.use(require('./routes/artists'));
+app.use(require('./routes/privacypolicy'));
+app.use(require('./routes/register'));
+app.use(require('./routes/schedule'));
+app.use(require('./routes/venuetravel'));
 
 //<-----------------Server to Listen in on Connections---------------->
 //<------------------------------------------------------------------->
