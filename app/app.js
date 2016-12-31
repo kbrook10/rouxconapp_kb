@@ -12,7 +12,10 @@ var dataFile = require('./data/data.json');
 //<------------------------------------------------------------------->
 //Create flexible port value depending on environment and set default to 3000...
 app.set('port', process.env.PORT || 3000);
-
+//This sets the view engine to use Embedded JavaScript
+app.set('view engine', 'ejs');
+//This sets the location of the views
+app.set('views', 'app/views');
 
 //<-----------------Establish connections to modular routes----------->
 //<------------------------------------------------------------------->
