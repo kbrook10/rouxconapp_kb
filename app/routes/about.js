@@ -6,9 +6,10 @@ var router = express.Router();
 //Create route for about...
 router.get('/about', function(req, res) {
     res.send(`
-        <link rel='stylesheet' type='text/css' href='/css/style.css'>        
-        <h1>Welcome to the about page...Within the new Route module</h1>
+        <link rel='stylesheet' type='text/css' href='/css/style.css'>
+        <h1>Welcome to the about page...Within the new Route module...With Automation too...</h1>
         <img src='/img/SCOB_Family.PNG' alt='image of scob family logo' style='height: 300px;' />
+        <script src='/reload/reload.js'></script>
         `);
 });
 

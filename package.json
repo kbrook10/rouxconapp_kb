@@ -4,11 +4,12 @@
   "description": "Lynda.com tutorial for Building a Website with Node.js covering Bootstrap 3: Adv Web Development",
   "main": "app/app.js",
   "dependencies": {
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "reload": "^1.1.0"
   },
   "devDependencies": {},
   "scripts": {
-    "start": "node app/app.js"
+    "start": "nodemon -e css,ejs,js,json --watch app app/app.js"
   },
   "author": "Keith Brooks",
   "license": "MIT"

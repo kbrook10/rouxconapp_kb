@@ -2,6 +2,7 @@
 //<------------------------------------------------------------------->
 //This creates a variable that requires the express library...
 var express = require('express');
+var reload = require('reload');
 //This creates an instance of the express method and assigns it to a variable...
 var app = express();
 var dataFile = require('./data/data.json');
@@ -25,3 +26,7 @@ app.use(require('./routes/about'));
 var server = app.listen(app.get('port'), function() {
     console.log('Listening in on port ' + app.get('port'));
 });
+
+//<--------Automate Workflow to watch changes and refresh Browser----->
+//<------------------------------------------------------------------->
+reload(server, app);
