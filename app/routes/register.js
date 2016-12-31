@@ -4,10 +4,10 @@ var router = express.Router();
 
 
 //Create route for about...
-router.get('/about', function(req, res) {
-    res.render('about', {
-        pageTitle: 'About Us',
-        pageID: 'about'
+router.get('/register', function(req, res) {
+    res.render('register', {
+        pageTitle: 'Register',
+        pageID: 'register'
     });
 });
 
