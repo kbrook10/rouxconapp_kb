@@ -15,6 +15,7 @@ app.set('port', process.env.PORT || 3000);
 
 //<-----------------Establish connections to modular routes----------->
 //<------------------------------------------------------------------->
+app.use(express.static('app/public'));
 app.use(require('./routes/index'));
 app.use(require('./routes/about'));
 
