@@ -4,14 +4,15 @@
 <body id='<%= pageID %>'>
   <section class='container'>
     <div class="content row">
+      <% include partials/content/header.ejs %>
+      <% include partials/content/snippet-carousel.ejs %>
       <div class="main col col-lg-8">
-        <% include partials/content/header.ejs %>
       </div><!-- main -->
       <div class="sidebar col col-lg-4">
         <% include partials/content/sidebar.ejs %>
       </div><!-- sidebar -->
     </div><!-- content -->
-    <% include partials/template/footer.ejs %>    
+    <% include partials/content/footer.ejs %>
   </section><!-- container -->
   <!-- Scripts go here. -->
 <% include partials/template/jsdefaults.ejs %>
