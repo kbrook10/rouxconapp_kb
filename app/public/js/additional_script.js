@@ -9,4 +9,9 @@ $('.modalphotos img').on('click', funtion(){
     $('#modalimage').on('click', function(){
         $('modal').modal('hide')
     });
+
+//activate schedule tabs (This allows use to click on a day schedule on the home page and redirect to that tab on the schedules page...)
+var hash = window.location.hash;
+hash && $('ul.nav a[href=" ' + hash + '"]').tab('show');
+
 });
