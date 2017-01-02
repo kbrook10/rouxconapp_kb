@@ -16,6 +16,8 @@ app.set('port', process.env.PORT || 3000);
 app.set('view engine', 'ejs');
 //This sets the location of the views
 app.set('views', 'app/views');
+//This allows the site title to be used across entire application...
+app.locals.siteTitle = 'Roux Conference 2016';
 
 //<-----------------Establish connections to modular routes----------->
 //<------------------------------------------------------------------->
