@@ -2,19 +2,21 @@
 <html>
 <head><% include partials/template/head.ejs %></head>
 <body id='<%= pageID %>'>
-  <section class='container'>
-    <div class="content row">
-      <% include partials/content/header.ejs %>
-
-      <div class="main col col-lg-8">
-
-      </div><!-- main -->
-      <div class="sidebar col col-lg-4">
-
-      </div><!-- sidebar -->
-    </div><!-- content -->
-    <% include partials/content/footer.ejs %>
-  </section><!-- container -->
+    <section class='container'>
+      <div class="content row">
+        <% include partials/content/header.ejs %>
+        <div class="main col col-lg-8">
+          <% include partials/content/article-registrationform.ejs %>
+        </div><!-- main -->
+        <div class="sidebar col col-lg-4">
+          <% include partials/content/aside-register.ejs %>
+          <% include partials/content/aside-lastyear.ejs %>
+          <% include partials/content/aside-abouttheartists.ejs %>
+          <% include partials/content/aside-accordion.ejs %>
+        </div><!-- sidebar -->
+      </div><!-- content -->
+      <% include partials/content/footer.ejs %>
+    </section><!-- container -->
   <!-- Scripts go here. -->
 <% include partials/template/jsdefaults.ejs %>
 </body>
