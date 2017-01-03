@@ -1,3 +1,9 @@
+//<-----------------Add on dev to package.json------------------------->
+//<------------------------------------------------------------------->
+// "scripts": {
+//   "start": "nodemon -e css,ejs,js,json --watch app app/app.js"
+// },
+
 //<-----------------Initial Imports and Setup------------------------->
 //<------------------------------------------------------------------->
 //This creates a variable that requires the express library...
