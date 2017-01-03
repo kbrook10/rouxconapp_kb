@@ -2,16 +2,24 @@
   "name": "rouxconapp",
   "version": "1.0.0",
   "description": "Lynda.com tutorial for Building a Website with Node.js covering Bootstrap 3: Adv Web Development",
+  "engines": {
+   "node": "6.9.2"
+ },
   "main": "app/app.js",
+  "scripts": {
+    "start": "nodemon -e css,ejs,js,json --watch app app/app.js"
+  },
   "dependencies": {
     "ejs": "^2.5.5",
     "express": "^4.14.0",
     "reload": "^1.1.0"
   },
   "devDependencies": {},
-  "scripts": {
-    "start": "nodemon -e css,ejs,js,json --watch app app/app.js"
-  },
   "author": "Keith Brooks",
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
   "license": "MIT"
 }
