@@ -14,6 +14,10 @@
     "express": "^4.14.0",
     "reload": "^1.1.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kbrook10/rouxconapp_kb.git"
+  },
   "devDependencies": {},
   "author": "Keith Brooks",
   "keywords": [
